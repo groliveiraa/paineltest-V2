@@ -1,0 +1,235 @@
+div.container4 {
+	border-radius: 2px;
+  display: inline-block;
+  height: 20px;
+  margin: 1rem;
+  position: relative;
+  width: 130px;
+  height: 10em;
+  align-items: auto;
+ }
+
+div.container4 p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+	font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 30px;
+  color:white;
+  transform: translate(-50%, -50%)
+ }
+	
+.logo{
+	position: fixed;
+	left:0;
+	margin: 0;
+	padding: 5px 2px;
+}
+
+.logo img{
+	width: 150px;
+	height: 52px;
+}
+
+h2 {
+	text-align:center;
+}
+
+div.container5 {
+	border-radius: 2px;
+  display: inline-block;
+  height: 20px;
+  margin: 1rem;
+  position: relative;
+  width: 840px;
+  height: 10em;
+  position: relative 
+}
+	
+div.container5 p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+	font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 30px;
+  color:white;
+  transform: translate(-50%, -50%) 
+}
+	
+a {	text-decoration:none;}
+    
+p {
+  margin-top: 5px;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 150%;
+  color:white;  
+  text-align:center;
+}
+
+.dados_1 {
+	margin-top: 5px;
+	font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 150%;
+  color:white;  
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dados_3 {
+	margin-top: 5px;
+	font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 150%;
+  color:white;  
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dados_7 {
+  margin-top: 5px;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 150%;
+  color:white;  
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dados_2 {
+  margin-top: 5px;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 150%;
+  color:white;  
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+.local {
+    margin-left: 60px;
+}
+
+.botao{
+  float:right;
+  position: relative;
+  margin-left: 1280px;
+} 
+
+/* PopUp  */
+#popuph1 {
+  margin-top: 5px;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 150%;
+  color:black;  
+  text-align:center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  height: 100vh;
+}
+      
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  margin: 80px 0;
+}
+      
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+      
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: black;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.button:hover {
+  background: #06D85F;
+}
+      
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+      
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+      
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: #06D85F;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+      
+@media screen and (max-width: 700px){
+.box{
+  width: 70%;
+}
+
+.popup{
+  width: 70%;
+  } 
+}

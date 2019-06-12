@@ -1,0 +1,176 @@
+<!doctype html> 
+
+<html lang="pt-BR">
+
+<head>
+	<meta charset="utf-8">
+	<!-- <meta http-equiv="refresh" content="300"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>PAINEL ATMS/SERVCOM TERMINAIS</title>
+
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<!--<link rel="icon" sizes="192x192" href="images/android-desktop.png">-->
+
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Material Design Lite">
+	<!--<link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">-->
+
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#3372DF">
+	<link rel="shortcut icon" href="images/mq.ico">
+	<!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+	<!--
+        <link rel="canonical" href="http://www.example.com/">
+        -->
+
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+	<link rel="stylesheet" href="material.cyan-light_blue.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/atm.css">
+
+	<!-- <script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
+	<script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="scripts/atm.js"></script>
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<link rel="shortcut icon" href="images/atm.ico">
+
+	<!--Atualiza a página a cada 5 Min-->
+	<meta http-equiv="refresh" content="300" url="http://stallone/painel_servcom/homolog_externa.html">
+
+</head>
+
+<body>
+	<div id="resultado"></div>
+	<div class="demo-layout mdl-layout mdl-js-layout">
+		<header class="mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-800 is-casting-shadow">
+			<div class="logo">
+				<img src="images/tecban.png" />
+			</div>
+			<div class="mdl-layout__header-row">
+
+				<h1 class="mdl-layout-title">Painel ATMs/Servcom Terminais</h1>
+				<form action="#">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label">
+						<label class="mdl-button mdl-js-button mdl-button--icon local" for="search-expandable2">
+							<img src="images/search_2x.png" />
+						</label>
+						<div class="mdl-textfield__expandable-holder">
+							<div>
+								<input class="mdl-textfield__input local" type="text" id="search-expandable2" onkeyup="searchFunction()" onsearch="searchFunction()">
+								<label class="mdl-textfield__label local" for="search-expandable2">
+									ATMs
+								</label>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</header>
+
+		<main class="mdl-layout__content">
+			<div class="mdl-grid">
+				<div class="  mdl-cell mdl-cell--6-col mdl-shadow--6dp mdl-color--silver-800 ">
+					<div class=" mdl-card__title mdl-card--border mdl-card--expand mdl-color--grey-300 mdl-color-text--brown-900">
+						<h2 class=" mdl-card__title-text">Homolog1</h2>
+					</div>
+					<a href="#popup1" <div class="mdl-grid" id="homolog1">
+						<!-- <p id="">
+								<a href="#popup1" class "dados_1" id="dados_1" style="color:black;">carregando...</a>
+						</p> -->
+					</a>
+				</div>
+
+				<div class=" mdl-cell mdl-cell--6-col mdl-shadow--6dp mdl-color--silver-800  ">
+					<center>
+						<div class="mdl-card__title mdl-card--border mdl-card--expand mdl-color--grey-300 mdl-color-text--brown-900">
+							<h2 class="mdl-card__title-text">Homolog3</h2>
+						</div>
+						<a href="#popup1" <div class="mdl-grid" id="homolog3">
+							<!-- <p id="">
+									<a href="#popup1" class "dados_3" id="dados_3" style="color:black;">carregando...</a>
+							</p> -->
+							</a>
+						</div>
+					</center>
+
+					<div class="box">
+						<!--<a class="button" href="#popup1">ATM</a>-->
+					</div>
+			
+					<div id="popup1" class="overlay">
+						<div class="popup">
+							<h2>Informações</h2>
+							<a class="close" href="#">&times;</a>
+							<div class="content">
+								
+							<p id="popuph1"></p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+		</main>
+
+		<script src="mdl\material.js"></script>
+		<script language="JavaScript">
+			// var JSONText;
+			// var atmsHomolog1;
+			// var atmsHomolog3;
+
+
+			// atmsHomolog1 = '';
+			// atmsHomolog3 = '';
+
+			// JSONText = '{"servcom": [{"ambiente": {"id":"homolog1","atms": [{"id":"1240003"},{"id":"1240004"},{"id":"1240006"},{"id":"1240007"},{"id":"1240011"},{"id":"1240014"},{"id":"1240015"},{"id":"1240018"},{"id":"1242002"}]}}, {"ambiente": {"id":"homolog3","atms": [{"id":"1240002"},{"id":"1240005"},{"id":"1240008"},{"id":"1240009"},{"id":"1240010"},{"id":"1240012"},{"id":"1240013"},{"id":"1240021"},{"id":"1242001"},{"id":"2370001"},{"id":"4770010"},{"id":"4770011"},{"id":"4770016"}]}}]}';
+			
+			// var obj = JSON.parse(JSONText);	
+			
+			// obj.servcom.forEach(
+			// 	(servcom) => {
+			// 		servcom.ambiente.atms.forEach(
+			// 			(atms) => { // if ternario 
+			// 				servcom.ambiente.id === 'homolog1' ? atmsHomolog1 += montaComponente(atms.id) : atmsHomolog3 += montaComponente(atms.id);
+			// 			}
+			// 		);
+
+			// 	});
+
+			// // montar o componente 
+			// function montaComponente(val) {
+			// 	//var comp = '<div class="mdl-cell mdl-cell--2-col mdl-shadow--6dp mdl-color--green-800 container4 ' + val + '">' + val + '</div><br/>';
+			// 	var comp = '<div class="mdl-cell mdl-cell--2-col mdl-shadow--6dp mdl-color--green-800 container4 popupp">' + val + '</div><br/>';
+			// 	console.log(comp);
+			// 	return comp;
+			// }
+
+
+			// document.getElementById("dados_1").innerHTML = atmsHomolog1;
+			// document.getElementById("dados_3").innerHTML = atmsHomolog3;
+
+	//GET JSON		
+// 			$(document).ready(function(){
+//     $(".popupp").click(function(event) {        
+// 		$.getJSON("http://127.0.0.1:5500/monitservcom_homolog1.json", function(result){
+// 			var codigo = $(event.target).text();
+//             document.getElementById("popuph1").innerHTML = "";			
+//             for (let index = 0; index < result.ambiente[0].mr[0].cm[1].atm.length; index++) {
+//                 const atm = result.ambiente[0].mr[0].cm[1].atm[index];
+//                 if (atm.id === codigo) {    
+// 					document.getElementById("popuph1").innerHTML = "ATM: "+ atm.id + "<br>" + "<br>" + "IP: " + atm.ip+ "<br>" + "Status: "+ atm.status+ "<br>" + "Offering: "+ atm.offering + "<br>" + "Switch: "+ atm.switch;
+// 					break;
+//                 }
+//             }
+//         });
+//     });
+// });
+
+		</script>
+</body>
+
+</html>

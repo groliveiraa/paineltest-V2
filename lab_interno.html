@@ -1,0 +1,193 @@
+<!doctype html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="refresh" content="300"> -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>PAINEL ATMS/SERVCOM TERMINAIS</title>
+
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <!--<link rel="icon" sizes="192x192" href="images/android-desktop.png">-->
+
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+        <!--<link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">-->
+
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#3372DF">
+        <link rel="shortcut icon" href="images/mq.ico">
+        <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+        <!--
+        <link rel="canonical" href="http://www.example.com/">
+        -->
+
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+        <link rel="stylesheet" href="material.cyan-light_blue.min.css">
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/atm.css">
+		
+        <!-- <script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
+        <script type="text/javascript" src="../scripts/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="scripts/atm.js"></script>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+		<link rel="shortcut icon" href="images/atm.ico">
+        
+        <!--Atualiza a página a cada 5 Min-->
+		<meta http-equiv="refresh" content="300"url="http://stallone/painel_servcom/lab_interno.html">
+
+    </head>
+    <body>
+	   <div id="resultado"></div>
+        <div class="demo-layout mdl-layout mdl-js-layout">
+      	<header class="mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-800 is-casting-shadow">
+			<div class="logo">
+				<img src="images/tecban.png" />
+			</div>
+		<div class="mdl-layout__header-row">
+			
+			<h1 class="mdl-layout-title">Painel ATMs/Servcom Terminais</h1>
+                    <form action="#">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label">
+								<label class="mdl-button mdl-js-button mdl-button--icon local" for="search-expandable2">
+									<img src="images/search_2x.png" />
+								</label>
+								<div class="mdl-textfield__expandable-holder">
+									<div>
+										<input class="mdl-textfield__input local" type="text" id="search-expandable2" onkeyup="searchFunction()">
+										<label class="mdl-textfield__label local" for="search-expandable2">
+											ATMs
+										</label>
+									</div>
+								</div>
+							</div>   
+					</form>
+		</div>
+		</header>
+	<!--
+	
+            <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+                <header class="demo-drawer-header">
+                    <img src="images/user.jpg" class="demo-avatar">
+                    <div class="demo-avatar-dropdown">
+                        <span>Olá</span>
+                        <div class="mdl-layout-spacer"></div>
+                    </div>
+                </header>
+				
+                <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+                    <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Início</a>
+                    <a class="mdl-navigation__link" href="#deploys"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">get_app</i>Deploys</a>     
+                    <a class="mdl-navigation__link" href="http://stallone/forum/" target="_blank"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i>Tutorial</a>
+                      <!--<a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flag</i>Updates</a>
+                      <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">local_offer</i>Promos</a>
+                      <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">shopping_cart</i>Purchases</a>
+                      <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Social</a> 
+                    <div class="mdl-layout-spacer"></div>
+                    <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Dúvidas?</span></a>
+                </nav>
+            </div>
+			-->
+            <main class = "mdl-layout__content">    
+                <div class = "mdl-grid">
+                   <div class = "  mdl-cell mdl-cell--12-col mdl-shadow--6dp mdl-color--silver-800 " >
+                        <div class=" mdl-card__title mdl-card--border mdl-card--expand mdl-color--grey-300 mdl-color-text--brown-900">
+                            <h2 class=" mdl-card__title-text">Homolog7</h2>
+                        </div>
+                        <a href="#popup1" <div class = "mdl-grid" id="homolog7">
+                            <!-- <p id="dados_7" style="color:black;">carregando...</p> -->
+                            </a>
+                        </div>
+                    </div>
+                
+                   <div class = " mdl-cell mdl-cell--6-col mdl-shadow--6dp mdl-color--silver-800" style="display: none"  >
+                   <center>
+                   <div class="mdl-card__title mdl-card--border mdl-card--expand mdl-color--grey-300 mdl-color-text--brown-900">
+                    <h2 class="mdl-card__title-text">Homolog2</h2>
+                    </div>
+                    <a href="#popup1" <div class ="mdl-grid" id="homolog2">
+                            <!-- <p id="dados_2" style="color:black;">carregando...</p> -->
+                            </a>
+                        </div> 
+                    </center>					
+                   
+                    <div class="box">
+						<!--<a class="button" href="#popup1">ATM</a>-->
+					</div>
+			
+					<div id="popup1" class="overlay">
+						<div class="popup">
+							<h2>Informações</h2>
+							<a class="close" href="#">&times;</a>
+							<div class="content">
+								
+							<p id="popuph1"></p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+                 
+                    </main>
+               
+            <script src="mdl\material.js"></script>
+            <script language="JavaScript">
+                var JSONText;
+                var atmsHomolog7;
+                var atmsHomolog2;
+                
+                atmsHomolog7 = '';
+                atmsHomolog2 = '';
+                JSONText = '{"servcom": [{"ambiente": {"id":"homolog7","atms": [{"id":"0000003"},{"id":"0000028"},{"id":"0000029"},{"id":"0000030"},{"id":"0000087"},{"id":"0000101"},{"id":"0000214"},{"id":"0000533"},{"id":"0000594"},{"id":"0001401"},{"id":"0001403"},{"id":"0001608"},{"id":"0002003"},{"id":"0002006"},{"id":"0002037"},{"id":"0005803"},{"id":"0005977"},{"id":"0007572"},{"id":"0008900"},{"id":"0010036"},{"id":"0010052"},{"id":"0010054"},{"id":"0010058"},{"id":"0010146"},{"id":"0010220"},{"id":"0010685"},{"id":"0012529"},{"id":"0012544"},{"id":"0018491"},{"id":"0030530"},{"id":"0035750"},{"id":"0290103"},{"id":"0310254"},{"id":"0330745"},{"id":"0937602"},{"id":"4199822"}]}}]}';
+    
+                var obj = JSON.parse(JSONText);
+    
+                obj.servcom.forEach( 
+                    (servcom) => {
+                        servcom.ambiente.atms.forEach(
+                            (atms) => { // if ternario 
+                                servcom.ambiente.id === 'homolog7' ? atmsHomolog7 += montaComponente(atms.id) : atmsHomolog2 +=  montaComponente(atms.id);
+                            }
+                        );
+                        
+                    });
+    
+                // montar o componente 
+                function montaComponente(val) {
+                    // var comp = '<div class="mdl-cell mdl-cell--2-col mdl-shadow--6dp mdl-color--green-800 container4 '+ val +'">'+ val + '</div><br/>';
+                    var comp = '<div class="mdl-cell mdl-cell--2-col mdl-shadow--6dp mdl-color--green-800 container4 popupp">' + val + '</div><br/>';
+                    console.log(comp);
+                    return comp;
+                }
+    
+                
+                // document.getElementById("dados_7").innerHTML = atmsHomolog7;
+                // document.getElementById("dados_2").innerHTML = atmsHomolog2;
+
+
+                //GET JSON		
+			$(document).ready(function(){
+    $(".popupp").click(function(event) {        
+		$.getJSON("http://127.0.0.1:5500/monitservcom_homolog7.json", function(result){
+			var codigo = $(event.target).text();
+            document.getElementById("popuph1").innerHTML = "";			
+            for (let index = 0; index < result.ambiente[0].mr[0].cm[1].atm.length; index++) {
+                const atm = result.ambiente[0].mr[0].cm[1].atm[index];
+                if (atm.id === codigo) {    
+					document.getElementById("popuph1").innerHTML = "ATM: "+ atm.id + "<br>" + "<br>" + "IP: " + atm.ip+ "<br>" + "Status: "+ atm.status+ "<br>" + "Offering: "+ atm.offering + "<br>" + "Switch: "+ atm.switch;
+					break;
+                }
+            }
+        });
+    });
+});
+            </script>
+            
+        </body>
+    </html>
